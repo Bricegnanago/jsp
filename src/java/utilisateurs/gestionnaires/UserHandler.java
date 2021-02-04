@@ -56,7 +56,8 @@ public class UserHandler {
     public List<User> getUsers() {
         return users;
     }
-
+    
+    
     /**
      * Permet de r&eacute;cup&eacute;rer l'instance d'un utilisateur &agrave; partir de son ID
      * @param userid ID de l'utilisateur &agrave; r&eacute;cup&eacute;rer
@@ -90,7 +91,7 @@ public class UserHandler {
         User u = getUserFromId(userid);
         u.setLogin(login);
         u.setLastName(lastname);
-        u.setFirstName(firstname);
+        u.setFirstName(firstname);                                                  
         Writer.serializeUsers();
     }
 
